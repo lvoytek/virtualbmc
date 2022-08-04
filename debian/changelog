@@ -1,0 +1,5 @@
+python-virtualbmc (2.2.2-0ubuntu1) kinetic; urgency=medium
+
+  * Initial release using upstream version 2.2.2
+
+ -- Lena Voytek <lena.voytek@canonical.com>  Fri, 29 Jul 2022 12:41:35 -0700
