@@ -1,0 +1,27 @@
+Source: python-virtualbmc
+Section: python
+Priority: optional
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Uploaders: Lena Voytek <lena.voytek@canonical.com>
+Build-Depends:
+ debhelper (>= 12),
+ dh-python,
+ python3-all,
+ python3-setuptools,
+ python3-pbr,
+ python3-libvirt,
+ python3-zmq,
+ python3-cliff,
+ python3-pyghmi,
+ python3-oslotest
+X-Python3-Version: >= 3.6
+Standards-Version: 4.6.0
+Homepage: https://opendev.org/openstack/virtualbmc
+Testsuite: autopkgtest-pkg-python
+
+Package: python3-virtualbmc
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+Description: A virtual BMC for controlling virtual machines using IPMI commands

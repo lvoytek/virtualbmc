@@ -1,0 +1,2 @@
+version=4
+https://opendev.org/openstack/virtualbmc/tags/ /openstack/virtualbmc/archive/(.+).tar.gz

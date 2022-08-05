@@ -1,0 +1,13 @@
+#!/usr/bin/make -f
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+export PYBUILD_NAME=virtualbmc
+export PYBUILD_TEST_ARGS=-k "unit.test_vbmc" -k "unit.test_utils" -k "unit.test_manager"
+
+%:
+	dh $@ --with python3 --buildsystem=pybuild
+
+override_dh_installsystemd:
+	dh_installsystemd --no-enable --name vbmcd
